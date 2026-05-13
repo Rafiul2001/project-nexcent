@@ -10,6 +10,9 @@ import viteReact from '@vitejs/plugin-react'
 const config = defineConfig({
   resolve: { tsconfigPaths: true },
   plugins: [devtools(), netlify(), tailwindcss(), tanstackStart(), viteReact()],
+  ssr: {
+    noExternal: ['@react-aria', '@react-stately', '@heroui', '@internationalized'],
+  },
 })
 
 export default config
