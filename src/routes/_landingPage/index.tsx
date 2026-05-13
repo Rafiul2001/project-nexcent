@@ -2,6 +2,7 @@ import Achievement from '#/components/organisms/Achievement'
 import Banner from '#/components/organisms/Banner'
 import Blog from '#/components/organisms/Blog'
 import Clients from '#/components/organisms/Clients'
+import CTA from '#/components/organisms/CTA'
 import EcoSystem from '#/components/organisms/EcoSystem'
 import FooterPromo from '#/components/organisms/FooterPromo'
 import Stats from '#/components/organisms/Stats'
@@ -21,6 +22,7 @@ function App() {
       <FooterPromo />
       <Testimonial />
       <Blog />
+      <CTA />
     </>
   )
 }
