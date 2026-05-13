@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+@import '@heroui/styles';
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+
+@theme {
+  /* Primary */
+  --color-primary-50: #f1f8f1;
+  --color-primary-100: #dceedc;
+  --color-primary-200: #b9dcba;
+  --color-primary-300: #88c489;
+  --color-primary-400: #4caf4f;
+  --color-primary-500: #4caf4f;
+  --color-primary-600: #388e3c;
+  --color-primary-700: #2e7031;
+  --color-primary-800: #275929;
+  --color-primary-900: #214924;
+
+  /* Neutral */
+  --color-neutral-50: #f5f7fa;
+  --color-neutral-100: #eceef0;
+  --color-neutral-200: #d9dce1;
+  --color-neutral-300: #abbed1;
+  --color-neutral-400: #89a0b8;
+  --color-neutral-500: #717171;
+  --color-neutral-600: #4d4d4d;
+  --color-neutral-700: #3d3d3d;
+  --color-neutral-800: #263238;
+  --color-neutral-900: #18191f;
+
+  /* Semantic aliases */
+  --color-brand: #4caf4f;
+  --color-brand-dark: #388e3c;
+  --color-brand-darker: #103e13;
+  --color-brand-tint-4: #c8e6c9;
+  --color-brand-tint-5: #e8f5e9;
+  --color-brand-light: #dceedc;
+
+  --color-ink: #18191f;
+  --color-ink-soft: #717171;
+  --color-ink-muted: #abbed1;
+
+  --color-surface: #ffffff;
+  --color-surface-soft: #f5f7fa;
+  --color-border: #eceef0;
+}
+
+/* Banner swiper */
+.banner-swiper {
+  padding-bottom: 56px !important;
+}
+
+.banner-swiper .swiper-pagination {
+  bottom: 20px;
+}
+
+.banner-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-brand);
+  opacity: 0.3;
+  border-radius: 9999px;
+  margin: 0 4px !important;
+  transition:
+    width 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.banner-swiper .swiper-pagination-bullet-active {
+  width: 24px;
+  opacity: 1;
+}
