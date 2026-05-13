@@ -6,6 +6,7 @@
     "#/*": "./src/*"
   },
   "scripts": {
+    "postinstall": "node -e \"require('fs').writeFileSync('node_modules/@react-aria/i18n/dist/private/package.json', JSON.stringify({type:'module'}))\"",
     "dev": "vite dev --port 3000",
     "build": "vite build",
     "preview": "vite preview",
