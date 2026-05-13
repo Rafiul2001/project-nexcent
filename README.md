@@ -1,217 +1,112 @@
-Welcome to your new TanStack Start app! 
+# Nexcent
 
-# Getting Started
+A modern landing page built with React 19, TanStack Start, HeroUI, Tailwind CSS v4, and Framer Motion.
 
-To run this application:
+## Tech Stack
+
+| Category | Library |
+|---|---|
+| Framework | [TanStack Start](https://tanstack.com/start) + React 19 |
+| Routing | [TanStack Router](https://tanstack.com/router) (file-based) |
+| UI Components | [HeroUI](https://heroui.com) v3 |
+| Styling | [Tailwind CSS](https://tailwindcss.com) v4 |
+| Animations | [Motion](https://motion.dev) v12 |
+| Icons | [Lucide React](https://lucide.dev) |
+| Carousel | [Swiper](https://swiperjs.com) v12 |
+| Validation | [Zod](https://zod.dev) v4 |
+| Build Tool | [Vite](https://vite.dev) v8 |
+| Deployment | [Netlify](https://netlify.com) |
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── atoms/          # Base typography & reusable primitives
+│   │   ├── Heading1.tsx
+│   │   ├── Heading2.tsx
+│   │   ├── Heading3.tsx
+│   │   ├── Writing.tsx
+│   │   └── ClientLogos.tsx
+│   ├── layout/
+│   │   └── RootLayout.tsx
+│   └── organisms/      # Full page sections
+│       ├── Navbar.tsx
+│       ├── Banner.tsx
+│       ├── Clients.tsx
+│       ├── EcoSystem.tsx
+│       ├── Achievement.tsx
+│       ├── Stats.tsx
+│       ├── FooterPromo.tsx
+│       ├── Testimonial.tsx
+│       ├── Blog.tsx
+│       ├── CTA.tsx
+│       └── Footer.tsx
+├── routes/
+│   ├── __root.tsx
+│   ├── _landingPage.tsx
+│   └── _landingPage/
+│       └── index.tsx   # Landing page composition
+└── styles.css          # Tailwind theme & global styles
+```
+
+## Page Sections
+
+The landing page renders sections in this order:
+
+1. **Navbar** — Sticky navigation with mobile drawer
+2. **Banner** — Hero carousel
+3. **Clients** — Client logo strip
+4. **EcoSystem** — Product ecosystem overview
+5. **Achievement** — Key highlights
+6. **Stats** — Statistics counters
+7. **FooterPromo** — Mid-page promotional block
+8. **Testimonial** — Customer testimonials
+9. **Blog** — Latest posts
+10. **CTA** — Call to action
+11. **Footer** — Site footer with links and newsletter
+
+## Getting Started
 
 ```bash
-bun install
-bun --bun run dev
+npm install
+npm run dev
 ```
 
-# Building For Production
+The dev server starts at [http://localhost:3000](http://localhost:3000).
 
-To build this application for production:
+## Scripts
 
-```bash
-bun --bun run build
-```
+| Command | Description |
+|---|---|
+| `npm run dev` | Start dev server on port 3000 |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build |
+| `npm run test` | Run tests with Vitest |
+| `npm run lint` | Lint with ESLint |
+| `npm run format` | Format with Prettier + ESLint fix |
+| `npm run check` | Check formatting with Prettier |
 
-## Testing
+## Theme
 
-This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
+Design tokens are defined in `src/styles.css` under `@theme`:
 
-```bash
-bun --bun run test
-```
+| Token | Value | Usage |
+|---|---|---|
+| `brand` | `#4caf4f` | Primary green |
+| `brand-dark` | `#388e3c` | Hover states |
+| `neutral-800` | `#263238` | Footer background |
+| `neutral-900` | `#18191f` | Darkest surface |
+| `ink` | `#18191f` | Body text |
+| `ink-soft` | `#717171` | Secondary text |
+| `surface` | `#ffffff` | White background |
+| `surface-soft` | `#f5f7fa` | Light grey background |
 
-## Styling
+## Deployment
 
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
+The project is configured for [Netlify](https://netlify.com) via the `@netlify/vite-plugin-tanstack-start` plugin and a `netlify.toml` config file.
 
-### Removing Tailwind CSS
-
-If you prefer not to use Tailwind CSS:
-
-1. Remove the demo pages in `src/routes/demo/`
-2. Replace the Tailwind import in `src/styles.css` with your own styles
-3. Remove `tailwindcss()` from the plugins array in `vite.config.ts`
-4. Uninstall the packages: `bun install @tailwindcss/vite tailwindcss -D`
-
-## Linting & Formatting
-
-
-This project uses [eslint](https://eslint.org/) and [prettier](https://prettier.io/) for linting and formatting. Eslint is configured using [tanstack/eslint-config](https://tanstack.com/config/latest/docs/eslint). The following scripts are available:
-
-```bash
-bun --bun run lint
-bun --bun run format
-bun --bun run check
-```
-
-
-## Deploy to Netlify
-
-This project ships with `netlify.toml` configured for a Netlify site:
-
-1. Push this repo to GitHub
-2. Visit https://app.netlify.com/start and import the repo
-3. Netlify auto-detects the build (`vite build` → `dist/client`)
-4. Open **Site settings → Environment variables** and add anything from `.env.example` that needs a real value in production
-5. Trigger the first deploy
-
-Server functions and API routes run on Netlify Functions. For lower-latency request handling, see Netlify Edge Functions: https://docs.netlify.com/edge-functions/overview.
-
-
-
-## Routing
-
-This project uses [TanStack Router](https://tanstack.com/router) with file-based routing. Routes are managed as files in `src/routes`.
-
-### Adding A Route
-
-To add a new route to your application just add a new file in the `./src/routes` directory.
-
-TanStack will automatically generate the content of the route file for you.
-
-Now that you have two routes you can use a `Link` component to navigate between them.
-
-### Adding Links
-
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
-
-```tsx
-import { Link } from "@tanstack/react-router";
-```
-
-Then anywhere in your JSX you can use it like so:
-
-```tsx
-<Link to="/about">About</Link>
-```
-
-This will create a link that will navigate to the `/about` route.
-
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
-
-### Using A Layout
-
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you render `{children}` in the `shellComponent`.
-
-Here is an example layout that includes a header:
-
-```tsx
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-
-export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'My App' },
-    ],
-  }),
-  shellComponent: ({ children }) => (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </header>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  ),
-})
-```
-
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-## Server Functions
-
-TanStack Start provides server functions that allow you to write server-side code that seamlessly integrates with your client components.
-
-```tsx
-import { createServerFn } from '@tanstack/react-start'
-
-const getServerTime = createServerFn({
-  method: 'GET',
-}).handler(async () => {
-  return new Date().toISOString()
-})
-
-// Use in a component
-function MyComponent() {
-  const [time, setTime] = useState('')
-  
-  useEffect(() => {
-    getServerTime().then(setTime)
-  }, [])
-  
-  return <div>Server time: {time}</div>
-}
-```
-
-## API Routes
-
-You can create API routes by using the `server` property in your route definitions:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-import { json } from '@tanstack/react-start'
-
-export const Route = createFileRoute('/api/hello')({
-  server: {
-    handlers: {
-      GET: () => json({ message: 'Hello, World!' }),
-    },
-  },
-})
-```
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-
-export const Route = createFileRoute('/people')({
-  loader: async () => {
-    const response = await fetch('https://swapi.dev/api/people')
-    return response.json()
-  },
-  component: PeopleComponent,
-})
-
-function PeopleComponent() {
-  const data = Route.useLoaderData()
-  return (
-    <ul>
-      {data.results.map((person) => (
-        <li key={person.name}>{person.name}</li>
-      ))}
-    </ul>
-  )
-}
-```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
-
-# Demo files
-
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
-
-# Learn More
-
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
-
-For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
+1. Push the repo to GitHub
+2. Import at [app.netlify.com/start](https://app.netlify.com/start)
+3. Netlify auto-detects the build settings
+4. Trigger the first deploy
