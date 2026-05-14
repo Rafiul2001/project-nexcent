@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tmn_001",
+    "quote": "Nexcent transformed the way we handle membership. Before, renewals were a quarterly nightmare involving spreadsheets and manual emails. Now everything renews automatically and our admin team has been freed up for work that actually moves the needle.",
+    "author": {
+      "name": "Tim Smith",
+      "title": "CEO",
+      "organization": "British Dragon Boat Racing Association",
+      "avatar": "https://i.pravatar.cc/150?img=12"
+    },
+    "rating": 5,
+    "featured": true
+  },
+  {
+    "id": "tmn_002",
+    "quote": "We were sceptical about moving from our old system, but the migration was painless and the support team held our hand every step of the way. Our member retention is up 27% year-on-year.",
+    "author": {
+      "name": "Karen Webb",
+      "title": "Operations Manager",
+      "organization": "Triathlon Australia",
+      "avatar": "https://i.pravatar.cc/150?img=20"
+    },
+    "rating": 5,
+    "featured": true
+  },
+  {
+    "id": "tmn_003",
+    "quote": "The event booking module alone justified the switch. We ran our biggest regional championship yet with zero ticketing issues. Members loved the self-service portal.",
+    "author": {
+      "name": "David Osei",
+      "title": "Event Director",
+      "organization": "OneRen Cultural Trust",
+      "avatar": "https://i.pravatar.cc/150?img=15"
+    },
+    "rating": 5,
+    "featured": false
+  },
+  {
+    "id": "tmn_004",
+    "quote": "As a national body overseeing 200+ local clubs, we needed software that could handle complexity at scale. Nexcent delivers. The hierarchical club management view is exactly what we needed.",
+    "author": {
+      "name": "Maria Johansson",
+      "title": "National Director",
+      "organization": "Nordic Cycling Union",
+      "avatar": "https://i.pravatar.cc/150?img=22"
+    },
+    "rating": 4,
+    "featured": false
+  },
+  {
+    "id": "tmn_005",
+    "quote": "The analytics dashboard gives us a live pulse on member health. We caught a churn spike early, ran a targeted re-engagement campaign, and recovered 80% of at-risk members. That's real ROI.",
+    "author": {
+      "name": "Femi Adeyemi",
+      "title": "Growth Lead",
+      "organization": "Youth Football Federation",
+      "avatar": "https://i.pravatar.cc/150?img=18"
+    },
+    "rating": 5,
+    "featured": true
+  }
+]

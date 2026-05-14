@@ -1,0 +1,104 @@
+[
+  {
+    "id": "usr_001",
+    "firstName": "Sarah",
+    "lastName": "Mitchell",
+    "email": "sarah.mitchell@example.com",
+    "role": "admin",
+    "avatar": "https://i.pravatar.cc/150?img=1",
+    "organization": "British Dragon Boat Racing Association",
+    "joinedAt": "2022-03-15",
+    "isActive": true,
+    "membershipTier": "pro",
+    "stats": {
+      "communities": 3,
+      "eventsAttended": 42,
+      "connections": 187
+    }
+  },
+  {
+    "id": "usr_002",
+    "firstName": "James",
+    "lastName": "Okafor",
+    "email": "james.okafor@example.com",
+    "role": "member",
+    "avatar": "https://i.pravatar.cc/150?img=3",
+    "organization": "Triathlon Australia",
+    "joinedAt": "2022-08-22",
+    "isActive": true,
+    "membershipTier": "basic",
+    "stats": {
+      "communities": 1,
+      "eventsAttended": 11,
+      "connections": 54
+    }
+  },
+  {
+    "id": "usr_003",
+    "firstName": "Priya",
+    "lastName": "Sharma",
+    "email": "priya.sharma@example.com",
+    "role": "moderator",
+    "avatar": "https://i.pravatar.cc/150?img=5",
+    "organization": "OneRen Cultural Trust",
+    "joinedAt": "2021-11-04",
+    "isActive": true,
+    "membershipTier": "pro",
+    "stats": {
+      "communities": 5,
+      "eventsAttended": 78,
+      "connections": 312
+    }
+  },
+  {
+    "id": "usr_004",
+    "firstName": "Liam",
+    "lastName": "Nguyen",
+    "email": "liam.nguyen@example.com",
+    "role": "member",
+    "avatar": "https://i.pravatar.cc/150?img=7",
+    "organization": "Pacific Surf Riders Club",
+    "joinedAt": "2023-01-30",
+    "isActive": false,
+    "membershipTier": "basic",
+    "stats": {
+      "communities": 2,
+      "eventsAttended": 6,
+      "connections": 29
+    }
+  },
+  {
+    "id": "usr_005",
+    "firstName": "Amara",
+    "lastName": "Collins",
+    "email": "amara.collins@example.com",
+    "role": "admin",
+    "avatar": "https://i.pravatar.cc/150?img=9",
+    "organization": "Youth Football Federation",
+    "joinedAt": "2020-06-18",
+    "isActive": true,
+    "membershipTier": "enterprise",
+    "stats": {
+      "communities": 12,
+      "eventsAttended": 134,
+      "connections": 741
+    }
+  },
+  {
+    "id": "usr_006",
+    "firstName": "Tom",
+    "lastName": "Eriksen",
+    "email": "tom.eriksen@example.com",
+    "role": "member",
+    "avatar": "https://i.pravatar.cc/150?img=11",
+    "organization": "Nordic Cycling Union",
+    "joinedAt": "2023-05-09",
+    "isActive": true,
+    "membershipTier": "pro",
+    "stats": {
+      "communities": 2,
+      "eventsAttended": 19,
+      "connections": 88
+    }
+  }
+]

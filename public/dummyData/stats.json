@@ -1,0 +1,35 @@
+{
+  "platform": {
+    "members": 2245341,
+    "clubs": 46328,
+    "eventBookings": 828867,
+    "paymentsProcessed": 1926436
+  },
+  "growth": {
+    "membersGrowthPercent": 18.4,
+    "clubsGrowthPercent": 12.1,
+    "eventBookingsGrowthPercent": 31.7,
+    "paymentsGrowthPercent": 24.9
+  },
+  "monthly": [
+    { "month": "Jan", "newMembers": 18420, "renewals": 14320, "events": 6830 },
+    { "month": "Feb", "newMembers": 21050, "renewals": 15900, "events": 7100 },
+    { "month": "Mar", "newMembers": 25300, "renewals": 17450, "events": 8920 },
+    { "month": "Apr", "newMembers": 23870, "renewals": 16700, "events": 9440 },
+    { "month": "May", "newMembers": 28190, "renewals": 18230, "events": 10250 },
+    { "month": "Jun", "newMembers": 31540, "renewals": 20100, "events": 11870 },
+    { "month": "Jul", "newMembers": 29800, "renewals": 19600, "events": 10940 },
+    { "month": "Aug", "newMembers": 27650, "renewals": 18800, "events": 9780 },
+    { "month": "Sep", "newMembers": 33210, "renewals": 22400, "events": 12300 },
+    { "month": "Oct", "newMembers": 36080, "renewals": 24510, "events": 13450 },
+    { "month": "Nov", "newMembers": 34700, "renewals": 23200, "events": 12100 },
+    { "month": "Dec", "newMembers": 30900, "renewals": 21100, "events": 10600 }
+  ],
+  "topCategories": [
+    { "name": "Sports & Recreation", "clubs": 18730, "members": 920400 },
+    { "name": "Arts & Culture",      "clubs":  8210, "members": 412000 },
+    { "name": "Professional Bodies", "clubs":  7840, "members": 388700 },
+    { "name": "Charity & Voluntary", "clubs":  6340, "members": 310200 },
+    { "name": "Education",           "clubs":  5208, "members": 214041 }
+  ]
+}

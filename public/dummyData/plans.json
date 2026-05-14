@@ -1,0 +1,77 @@
+[
+  {
+    "id": "plan_basic",
+    "name": "Basic",
+    "tagline": "Perfect for small clubs just getting started",
+    "price": {
+      "monthly": 0,
+      "annually": 0,
+      "currency": "GBP"
+    },
+    "isFree": true,
+    "isPopular": false,
+    "features": [
+      { "label": "Up to 50 members",             "included": true  },
+      { "label": "1 community",                   "included": true  },
+      { "label": "Basic member directory",         "included": true  },
+      { "label": "Manual renewals",               "included": true  },
+      { "label": "Automated renewals",            "included": false },
+      { "label": "Event bookings",                "included": false },
+      { "label": "Payment processing",            "included": false },
+      { "label": "Analytics dashboard",           "included": false },
+      { "label": "Priority support",              "included": false }
+    ],
+    "cta": "Get started free",
+    "ctaHref": "/register"
+  },
+  {
+    "id": "plan_pro",
+    "name": "Pro",
+    "tagline": "For growing organisations that need automation",
+    "price": {
+      "monthly": 49,
+      "annually": 39,
+      "currency": "GBP"
+    },
+    "isFree": false,
+    "isPopular": true,
+    "features": [
+      { "label": "Up to 1,000 members",           "included": true  },
+      { "label": "5 communities",                  "included": true  },
+      { "label": "Advanced member directory",      "included": true  },
+      { "label": "Automated renewals",            "included": true  },
+      { "label": "Event bookings (500/mo)",        "included": true  },
+      { "label": "Payment processing (2% fee)",    "included": true  },
+      { "label": "Analytics dashboard",           "included": true  },
+      { "label": "Email support (48h)",           "included": true  },
+      { "label": "Priority support",              "included": false }
+    ],
+    "cta": "Start free trial",
+    "ctaHref": "/register"
+  },
+  {
+    "id": "plan_enterprise",
+    "name": "Enterprise",
+    "tagline": "For national bodies and large organisations",
+    "price": {
+      "monthly": 199,
+      "annually": 159,
+      "currency": "GBP"
+    },
+    "isFree": false,
+    "isPopular": false,
+    "features": [
+      { "label": "Unlimited members",             "included": true  },
+      { "label": "Unlimited communities",          "included": true  },
+      { "label": "Custom member fields",           "included": true  },
+      { "label": "Automated renewals",            "included": true  },
+      { "label": "Unlimited event bookings",      "included": true  },
+      { "label": "Payment processing (1% fee)",    "included": true  },
+      { "label": "Advanced analytics & exports",  "included": true  },
+      { "label": "Priority support (4h SLA)",     "included": true  },
+      { "label": "Dedicated onboarding manager",  "included": true  }
+    ],
+    "cta": "Talk to sales",
+    "ctaHref": "/contact"
+  }
+]

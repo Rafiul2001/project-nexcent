@@ -1,0 +1,158 @@
+[
+  {
+    "id": "evt_001",
+    "title": "National Dragon Boat Championships 2025",
+    "slug": "national-dragon-boat-champs-2025",
+    "communityId": "com_001",
+    "communityName": "British Dragon Boat Racing Association",
+    "type": "competition",
+    "status": "upcoming",
+    "image": "/blogImage/image 18.png",
+    "description": "The premier annual dragon boat racing event in Great Britain. Crews from across the country compete across multiple categories.",
+    "location": {
+      "name": "Holme Pierrepont National Water Sports Centre",
+      "city": "Nottingham",
+      "country": "UK"
+    },
+    "startDate": "2025-07-19",
+    "endDate": "2025-07-20",
+    "capacity": 2400,
+    "registeredCount": 1840,
+    "price": {
+      "amount": 45.00,
+      "currency": "GBP",
+      "isFree": false
+    },
+    "tags": ["championship", "water-sports", "competition"]
+  },
+  {
+    "id": "evt_002",
+    "title": "Triathlon Coaches Accreditation Workshop",
+    "slug": "triathlon-coaches-workshop-2025",
+    "communityId": "com_002",
+    "communityName": "Triathlon Australia",
+    "type": "workshop",
+    "status": "upcoming",
+    "image": "/blogImage/image 19.png",
+    "description": "A two-day intensive workshop covering Level 1 coaching accreditation for triathlon, duathlon, and aquathlon coaches.",
+    "location": {
+      "name": "Melbourne Sports Hub",
+      "city": "Melbourne",
+      "country": "Australia"
+    },
+    "startDate": "2025-08-09",
+    "endDate": "2025-08-10",
+    "capacity": 60,
+    "registeredCount": 53,
+    "price": {
+      "amount": 120.00,
+      "currency": "AUD",
+      "isFree": false
+    },
+    "tags": ["coaching", "accreditation", "workshop"]
+  },
+  {
+    "id": "evt_003",
+    "title": "Summer Arts Festival — Community Open Day",
+    "slug": "oneren-summer-arts-festival-2025",
+    "communityId": "com_003",
+    "communityName": "OneRen Cultural Trust",
+    "type": "festival",
+    "status": "upcoming",
+    "image": "/blogImage/image 20.png",
+    "description": "A free outdoor festival celebrating local arts, music, and culture. Featuring live performances, workshops, and family activities.",
+    "location": {
+      "name": "Paisley Town Centre",
+      "city": "Paisley",
+      "country": "UK"
+    },
+    "startDate": "2025-06-28",
+    "endDate": "2025-06-28",
+    "capacity": 5000,
+    "registeredCount": 3120,
+    "price": {
+      "amount": 0,
+      "currency": "GBP",
+      "isFree": true
+    },
+    "tags": ["festival", "free", "family"]
+  },
+  {
+    "id": "evt_004",
+    "title": "Grassroots Surf Camp — Beginners Weekend",
+    "slug": "pacific-surf-beginner-camp-aug2025",
+    "communityId": "com_004",
+    "communityName": "Pacific Surf Riders Club",
+    "type": "training",
+    "status": "upcoming",
+    "image": "/blogImage/image 18.png",
+    "description": "A relaxed two-day surf camp for complete beginners. All equipment provided. Maximum 20 participants for personalised coaching.",
+    "location": {
+      "name": "Manly Beach",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "startDate": "2025-08-23",
+    "endDate": "2025-08-24",
+    "capacity": 20,
+    "registeredCount": 18,
+    "price": {
+      "amount": 85.00,
+      "currency": "AUD",
+      "isFree": false
+    },
+    "tags": ["surfing", "beginner", "training"]
+  },
+  {
+    "id": "evt_005",
+    "title": "Pan-African Youth Football Showcase",
+    "slug": "yff-showcase-2025",
+    "communityId": "com_005",
+    "communityName": "Youth Football Federation",
+    "type": "competition",
+    "status": "past",
+    "image": "/blogImage/image 19.png",
+    "description": "Annual showcase tournament featuring under-17 teams from 12 member countries. Scouted by professional clubs across Europe and Africa.",
+    "location": {
+      "name": "Stade de la Paix",
+      "city": "Abidjan",
+      "country": "Côte d'Ivoire"
+    },
+    "startDate": "2025-03-10",
+    "endDate": "2025-03-14",
+    "capacity": 800,
+    "registeredCount": 800,
+    "price": {
+      "amount": 0,
+      "currency": "USD",
+      "isFree": true
+    },
+    "tags": ["football", "youth", "international"]
+  },
+  {
+    "id": "evt_006",
+    "title": "Nordic Cyclo-Cross Series — Round 3",
+    "slug": "ncu-cyclocross-round3-2025",
+    "communityId": "com_006",
+    "communityName": "Nordic Cycling Union",
+    "type": "competition",
+    "status": "upcoming",
+    "image": "/blogImage/image 20.png",
+    "description": "Third round of the annual cyclo-cross championship series, held on the challenging forest course at Frognerseteren.",
+    "location": {
+      "name": "Frognerseteren",
+      "city": "Oslo",
+      "country": "Norway"
+    },
+    "startDate": "2025-10-05",
+    "endDate": "2025-10-05",
+    "capacity": 350,
+    "registeredCount": 214,
+    "price": {
+      "amount": 30.00,
+      "currency": "EUR",
+      "isFree": false
+    },
+    "tags": ["cycling", "cyclocross", "competition"]
+  }
+]

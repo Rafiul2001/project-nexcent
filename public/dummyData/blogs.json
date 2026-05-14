@@ -1,0 +1,92 @@
+[
+  {
+    "id": "blog_001",
+    "image": "/blogImage/image 18.png",
+    "title": "Creating Streamlined Safeguarding Processes with OneRen",
+    "slug": "streamlined-safeguarding-oneren",
+    "category": "Case Study",
+    "author": {
+      "name": "Priya Sharma",
+      "avatar": "https://i.pravatar.cc/150?img=5"
+    },
+    "publishedAt": "2024-09-12",
+    "readTimeMinutes": 6,
+    "excerpt": "Discover how OneRen Cultural Trust digitised their entire safeguarding workflow, reducing admin time by 60% and keeping their community safer.",
+    "tags": ["safeguarding", "case-study", "compliance"]
+  },
+  {
+    "id": "blog_002",
+    "image": "/blogImage/image 19.png",
+    "title": "What Are Your Safeguarding Responsibilities and How Can You Manage Them?",
+    "slug": "safeguarding-responsibilities-guide",
+    "category": "Guide",
+    "author": {
+      "name": "Sarah Mitchell",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    "publishedAt": "2024-10-03",
+    "readTimeMinutes": 9,
+    "excerpt": "A practical overview of safeguarding duties for membership organisations, national associations, and community clubs.",
+    "tags": ["safeguarding", "compliance", "guide"]
+  },
+  {
+    "id": "blog_003",
+    "image": "/blogImage/image 20.png",
+    "title": "Revamping the Membership Model with Triathlon Australia",
+    "slug": "membership-model-triathlon-australia",
+    "category": "Case Study",
+    "author": {
+      "name": "James Okafor",
+      "avatar": "https://i.pravatar.cc/150?img=3"
+    },
+    "publishedAt": "2024-11-18",
+    "readTimeMinutes": 7,
+    "excerpt": "How Triathlon Australia overhauled their tiered membership structure using Nexcent, boosting renewals by 38% in the first year.",
+    "tags": ["membership", "case-study", "growth"]
+  },
+  {
+    "id": "blog_004",
+    "image": "/blogImage/image 18.png",
+    "title": "5 Ways to Boost Member Engagement in Your Sports Club",
+    "slug": "boost-member-engagement-sports-club",
+    "category": "Tips",
+    "author": {
+      "name": "Amara Collins",
+      "avatar": "https://i.pravatar.cc/150?img=9"
+    },
+    "publishedAt": "2025-01-07",
+    "readTimeMinutes": 5,
+    "excerpt": "From personalised communications to automated event reminders, here are five proven tactics to keep your members active and coming back.",
+    "tags": ["engagement", "tips", "sports"]
+  },
+  {
+    "id": "blog_005",
+    "image": "/blogImage/image 19.png",
+    "title": "How to Set Up Automated Membership Renewals",
+    "slug": "automated-membership-renewals",
+    "category": "Tutorial",
+    "author": {
+      "name": "Tom Eriksen",
+      "avatar": "https://i.pravatar.cc/150?img=11"
+    },
+    "publishedAt": "2025-02-14",
+    "readTimeMinutes": 4,
+    "excerpt": "A step-by-step walkthrough of configuring auto-renewal billing in Nexcent so your members never lapse unintentionally.",
+    "tags": ["payments", "tutorial", "automation"]
+  },
+  {
+    "id": "blog_006",
+    "image": "/blogImage/image 20.png",
+    "title": "Understanding Analytics: Tracking Growth in Your Community",
+    "slug": "analytics-tracking-community-growth",
+    "category": "Insights",
+    "author": {
+      "name": "Priya Sharma",
+      "avatar": "https://i.pravatar.cc/150?img=5"
+    },
+    "publishedAt": "2025-03-22",
+    "readTimeMinutes": 8,
+    "excerpt": "Learn how to read your Nexcent dashboard to spot trends, identify churn risk, and make data-driven decisions for your community.",
+    "tags": ["analytics", "insights", "growth"]
+  }
+]

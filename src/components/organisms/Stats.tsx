@@ -1,3 +1,5 @@
+import type { PlatformStats } from '#/apis/stats.api'
+import { useStats } from '#/hooks/useStats'
 import type { Variants } from 'motion/react'
 import {
   animate,
@@ -10,11 +12,15 @@ import { useEffect, useRef } from 'react'
 import Heading2 from '../atoms/Heading2'
 import Writing from '../atoms/Writing'
 
-const STATS = [
-  { icon: '/stats/Icon.svg', value: 2245341, label: 'Members' },
-  { icon: '/stats/Icon-1.svg', value: 46328, label: 'Clubs' },
-  { icon: '/stats/Icon-2.svg', value: 828867, label: 'Event Bookings' },
-  { icon: '/stats/Icon-3.svg', value: 1926436, label: 'Payments' },
+const STAT_META: Array<{
+  icon: string
+  key: keyof PlatformStats
+  label: string
+}> = [
+  { icon: '/stats/Icon.svg', key: 'members', label: 'Members' },
+  { icon: '/stats/Icon-1.svg', key: 'clubs', label: 'Clubs' },
+  { icon: '/stats/Icon-2.svg', key: 'eventBookings', label: 'Event Bookings' },
+  { icon: '/stats/Icon-3.svg', key: 'paymentsProcessed', label: 'Payments' },
 ]
 
 const containerVariants: Variants = {
@@ -52,6 +58,14 @@ function CountUp({ value }: { value: number }) {
 }
 
 export default function Stats() {
+  const { data } = useStats()
+
+  const stats = STAT_META.map((s) => ({
+    icon: s.icon,
+    label: s.label,
+    value: data?.platform[s.key] ?? 0,
+  }))
+
   return (
     <section className="bg-surface-soft py-16">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16 lg:gap-24">
@@ -80,13 +94,17 @@ export default function Stats() {
           viewport={{ once: true, amount: 0.4 }}
           className="flex-1 grid grid-cols-2 gap-x-16 gap-y-8 shrink-0"
         >
-          {STATS.map((stat) => (
+          {stats.map((stat) => (
             <motion.div
               key={stat.label}
               variants={itemVariants}
               className="flex items-center gap-4"
             >
-              <img src={stat.icon} alt="" className="w-7 h-7 md:w-10 md:h-10 shrink-0" />
+              <img
+                src={stat.icon}
+                alt=""
+                className="w-7 h-7 md:w-10 md:h-10 shrink-0"
+              />
               <div className="flex flex-col">
                 <span className="font-bold text-lg md:text-2xl leading-7 md:leading-8 text-neutral-800">
                   <CountUp value={stat.value} />

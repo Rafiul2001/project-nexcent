@@ -5,6 +5,7 @@ import Clients from '#/components/organisms/Clients'
 import CTA from '#/components/organisms/CTA'
 import EcoSystem from '#/components/organisms/EcoSystem'
 import FooterPromo from '#/components/organisms/FooterPromo'
+import Pricing from '#/components/organisms/Pricing'
 import Stats from '#/components/organisms/Stats'
 import Testimonial from '#/components/organisms/Testimonial'
 import { createFileRoute } from '@tanstack/react-router'
@@ -22,6 +23,7 @@ function App() {
       <FooterPromo />
       <Testimonial />
       <Blog />
+      <Pricing />
       <CTA />
     </>
   )

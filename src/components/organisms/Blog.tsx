@@ -1,25 +1,10 @@
+import { useBlogs } from '#/hooks/useBlogs'
 import { Card } from '@heroui/react'
 import { ArrowRight } from 'lucide-react'
 import { motion } from 'motion/react'
 import Heading2 from '../atoms/Heading2'
 import Heading3 from '../atoms/Heading3'
 import Writing from '../atoms/Writing'
-
-const POSTS = [
-  {
-    image: '/blogImage/image 18.png',
-    title: 'Creating Streamlined Safeguarding Processes with OneRen',
-  },
-  {
-    image: '/blogImage/image 19.png',
-    title:
-      'What are your safeguarding responsibilities and how can you manage them?',
-  },
-  {
-    image: '/blogImage/image 20.png',
-    title: 'Revamping the Membership Model with Triathlon Australia',
-  },
-]
 
 const containerVariants = {
   hidden: {},
@@ -36,6 +21,9 @@ const cardVariants = {
 }
 
 export default function Blog() {
+  const { data } = useBlogs({ limit: 3 })
+  const posts = data?.data ?? []
+
   return (
     <section className="bg-surface py-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-12">
@@ -64,11 +52,11 @@ export default function Blog() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-8 w-full"
+          className="grid grid-cols-1 md:grid-cols-3 gap-20 w-full"
         >
-          {POSTS.map((post) => (
+          {posts.map((post) => (
             <motion.div
-              key={post.title}
+              key={post.id}
               variants={cardVariants}
               className="flex flex-col"
             >
@@ -85,7 +73,7 @@ export default function Blog() {
                       {post.title}
                     </Heading3>
                     <a
-                      href="#"
+                      href={`/blog/${post.slug}`}
                       className="flex items-center gap-1.5 text-brand font-semibold text-sm hover:underline"
                     >
                       Readmore <ArrowRight size={14} />

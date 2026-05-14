@@ -1,0 +1,128 @@
+[
+  {
+    "id": "com_001",
+    "name": "British Dragon Boat Racing Association",
+    "slug": "bdbra",
+    "type": "national-association",
+    "category": "Sports & Recreation",
+    "logo": "/clients/client-logo-1.svg",
+    "coverImage": "/blogImage/image 18.png",
+    "description": "The national governing body for dragon boat racing in Great Britain, uniting over 120 clubs and 8,000 paddlers.",
+    "memberCount": 8240,
+    "clubCount": 127,
+    "location": "United Kingdom",
+    "founded": 1991,
+    "isVerified": true,
+    "isPublic": true,
+    "tags": ["water-sports", "racing", "national-body"],
+    "contact": {
+      "website": "https://bdbra.example.com",
+      "email": "info@bdbra.example.com"
+    }
+  },
+  {
+    "id": "com_002",
+    "name": "Triathlon Australia",
+    "slug": "triathlon-au",
+    "type": "national-association",
+    "category": "Sports & Recreation",
+    "logo": "/clients/client-logo-2.svg",
+    "coverImage": "/blogImage/image 19.png",
+    "description": "Australia's peak body for triathlon, duathlon, and aquathlon — developing athletes from grassroots to elite.",
+    "memberCount": 34500,
+    "clubCount": 310,
+    "location": "Australia",
+    "founded": 1983,
+    "isVerified": true,
+    "isPublic": true,
+    "tags": ["triathlon", "endurance", "national-body"],
+    "contact": {
+      "website": "https://triathlon.example.com.au",
+      "email": "membership@triathlon.example.com.au"
+    }
+  },
+  {
+    "id": "com_003",
+    "name": "OneRen Cultural Trust",
+    "slug": "oneren",
+    "type": "membership-organisation",
+    "category": "Arts & Culture",
+    "logo": "/clients/client-logo-3.svg",
+    "coverImage": "/blogImage/image 20.png",
+    "description": "A registered charity delivering arts, culture, and leisure services across Renfrewshire, Scotland.",
+    "memberCount": 5600,
+    "clubCount": 18,
+    "location": "Scotland, UK",
+    "founded": 2019,
+    "isVerified": true,
+    "isPublic": true,
+    "tags": ["arts", "culture", "charity"],
+    "contact": {
+      "website": "https://oneren.example.com",
+      "email": "hello@oneren.example.com"
+    }
+  },
+  {
+    "id": "com_004",
+    "name": "Pacific Surf Riders Club",
+    "slug": "pacific-surf",
+    "type": "club",
+    "category": "Sports & Recreation",
+    "logo": "/clients/client-logo-4.svg",
+    "coverImage": "/blogImage/image 18.png",
+    "description": "A community surf club on the NSW coast welcoming surfers of all skill levels, from beginners to veterans.",
+    "memberCount": 420,
+    "clubCount": 1,
+    "location": "New South Wales, Australia",
+    "founded": 2007,
+    "isVerified": false,
+    "isPublic": true,
+    "tags": ["surfing", "water-sports", "community"],
+    "contact": {
+      "website": "https://pacificsurf.example.com",
+      "email": "club@pacificsurf.example.com"
+    }
+  },
+  {
+    "id": "com_005",
+    "name": "Youth Football Federation",
+    "slug": "yff",
+    "type": "national-association",
+    "category": "Sports & Recreation",
+    "logo": "/clients/client-logo-5.svg",
+    "coverImage": "/blogImage/image 19.png",
+    "description": "A non-profit federation developing grassroots youth football across 12 countries, with a focus on inclusion and fair play.",
+    "memberCount": 91200,
+    "clubCount": 860,
+    "location": "Pan-African",
+    "founded": 2005,
+    "isVerified": true,
+    "isPublic": true,
+    "tags": ["football", "youth", "non-profit"],
+    "contact": {
+      "website": "https://yff.example.org",
+      "email": "admin@yff.example.org"
+    }
+  },
+  {
+    "id": "com_006",
+    "name": "Nordic Cycling Union",
+    "slug": "ncu",
+    "type": "national-association",
+    "category": "Sports & Recreation",
+    "logo": "/clients/client-logo-6.svg",
+    "coverImage": "/blogImage/image 20.png",
+    "description": "The governing body for competitive and recreational cycling across the Nordic countries.",
+    "memberCount": 22800,
+    "clubCount": 214,
+    "location": "Scandinavia",
+    "founded": 1972,
+    "isVerified": true,
+    "isPublic": true,
+    "tags": ["cycling", "nordic", "national-body"],
+    "contact": {
+      "website": "https://ncu.example.org",
+      "email": "contact@ncu.example.org"
+    }
+  }
+]
