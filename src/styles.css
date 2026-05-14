@@ -45,6 +45,10 @@
   --color-border: #eceef0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Banner swiper */
 .banner-swiper {
   padding-bottom: 56px !important;
