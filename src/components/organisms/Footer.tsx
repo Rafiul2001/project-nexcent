@@ -6,10 +6,10 @@ import Writing from '../atoms/Writing'
 
 const COMPANY_LINKS = [
   { label: 'About us', href: '#' },
-  { label: 'Blog', href: '#' },
+  { label: 'Blog', href: '/#blog' },
   { label: 'Contact us', href: '#' },
-  { label: 'Pricing', href: '#' },
-  { label: 'Testimonials', href: '#' },
+  { label: 'Pricing', href: '/#pricing' },
+  { label: 'Testimonials', href: '/#community' },
 ]
 
 const SUPPORT_LINKS = [

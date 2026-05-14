@@ -25,7 +25,7 @@ export default function Blog() {
   const posts = data?.data ?? []
 
   return (
-    <section className="bg-surface py-20">
+    <section id="blog" className="bg-surface py-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-12">
         {/* Header */}
         <motion.div

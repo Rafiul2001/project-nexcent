@@ -32,7 +32,7 @@ export default function Pricing() {
   const [isAnnual, setIsAnnual] = useState(false)
 
   return (
-    <section className="bg-surface-soft py-20">
+    <section id="pricing" className="bg-surface-soft py-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-12">
         {/* Header */}
         <motion.div

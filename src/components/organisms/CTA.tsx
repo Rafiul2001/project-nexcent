@@ -17,9 +17,11 @@ export default function CTA() {
           Pellentesque suscipit fringilla libero eu.
         </Heading1>
 
-        <Button className="bg-brand hover:bg-brand-dark text-white font-medium text-base px-8 py-3.5 rounded-sm h-auto gap-2">
-          Get a Demo <ArrowRight size={16} />
-        </Button>
+        <a href="/register">
+          <Button className="bg-brand hover:bg-brand-dark text-white font-medium text-base px-8 py-3.5 rounded-sm h-auto gap-2">
+            Get a Demo <ArrowRight size={16} />
+          </Button>
+        </a>
       </motion.div>
     </section>
   )

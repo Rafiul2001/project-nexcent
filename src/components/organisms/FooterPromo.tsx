@@ -54,9 +54,11 @@ export default function FooterPromo() {
             hendrerit venenatis libero. Donec consectetur faucibus ipsum id
             gravida.
           </Writing>
-          <Button className="bg-brand hover:bg-brand-dark text-white font-medium text-base px-8 py-3.5 rounded-sm w-fit h-auto">
-            Learn More
-          </Button>
+          <a href="#feature">
+            <Button className="bg-brand hover:bg-brand-dark text-white font-medium text-base px-8 py-3.5 rounded-sm w-fit h-auto">
+              Learn More
+            </Button>
+          </a>
         </motion.div>
       </div>
     </section>

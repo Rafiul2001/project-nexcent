@@ -51,9 +51,11 @@ export default function Achievement() {
             Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
             elementum pulvinar odio.
           </Writing>
-          <Button className="bg-brand hover:bg-brand-dark text-white font-medium text-base px-8 py-3.5 rounded-sm w-fit h-auto">
-            Learn More
-          </Button>
+          <a href="#feature">
+            <Button className="bg-brand hover:bg-brand-dark text-white font-medium text-base px-8 py-3.5 rounded-sm w-fit h-auto">
+              Learn More
+            </Button>
+          </a>
         </motion.div>
       </div>
     </section>

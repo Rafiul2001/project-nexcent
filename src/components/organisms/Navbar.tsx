@@ -1,4 +1,5 @@
 import { Button } from '@heroui/react'
+import { Link } from '@tanstack/react-router'
 import { Menu, X } from 'lucide-react'
 import type { Variants } from 'motion/react'
 import { AnimatePresence, motion, useScroll, useTransform } from 'motion/react'
@@ -76,19 +77,19 @@ export default function Navbar() {
 
         {/* Desktop buttons */}
         <div className="hidden md:flex items-center gap-3">
-          <a href="#login">
+          <Link to="/login">
             <Button
               variant="outline"
               className="border-brand text-brand font-semibold text-sm px-6 rounded-md"
             >
               Login
             </Button>
-          </a>
-          <a href="#signup">
+          </Link>
+          <Link to="/register">
             <Button className="bg-brand text-surface font-semibold text-sm px-6 rounded-md hover:bg-brand-dark">
               Sign up
             </Button>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -131,19 +132,19 @@ export default function Navbar() {
                 variants={itemVariants}
                 className="flex flex-col gap-3 pt-3 mt-1 border-t border-border"
               >
-                <a href="#login">
+                <Link to="/login" onClick={() => setMobileOpen(false)}>
                   <Button
                     variant="outline"
                     className="w-full border-brand text-brand font-semibold rounded-md"
                   >
                     Login
                   </Button>
-                </a>
-                <a href="#signup">
+                </Link>
+                <Link to="/register" onClick={() => setMobileOpen(false)}>
                   <Button className="w-full bg-brand text-surface font-semibold rounded-md">
                     Sign up
                   </Button>
-                </a>
+                </Link>
               </motion.div>
             </div>
           </motion.div>

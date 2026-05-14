@@ -26,7 +26,7 @@ const CARDS = [
 
 export default function EcoSystem() {
   return (
-    <section className="bg-surface py-20">
+    <section id="feature" className="bg-surface py-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-16">
         <div className="flex flex-col items-center text-center gap-3">
           <Heading2 className="text-neutral-800 text-center">

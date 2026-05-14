@@ -56,9 +56,11 @@ export default function Banner() {
                     {slide.subtitle}
                   </Writing>
                 </div>
-                <Button className="bg-brand hover:bg-brand-dark text-white font-medium text-base px-8 py-3.5 rounded-sm w-fit h-auto">
-                  Register
-                </Button>
+                <a href="/register">
+                  <Button className="bg-brand hover:bg-brand-dark text-white font-medium text-base px-8 py-3.5 rounded-sm w-fit h-auto">
+                    Register
+                  </Button>
+                </a>
               </div>
               <div className="shrink-0">
                 <img

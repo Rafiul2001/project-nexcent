@@ -27,7 +27,7 @@ export default function Testimonial() {
   const current = testimonials.at(activeIndex)
 
   return (
-    <section className="bg-surface-soft py-20">
+    <section id="community" className="bg-surface-soft py-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16 lg:gap-24">
         {/* Customer image card */}
         <motion.div
