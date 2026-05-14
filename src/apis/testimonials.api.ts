@@ -1,6 +1,3 @@
-import { apiClient } from './apiClient'
-import { API_URLS } from './apiUrls'
-
 // ─── types ───────────────────────────────────────────────────────────────────
 
 export interface TestimonialAuthor {
@@ -20,6 +17,7 @@ export interface Testimonial {
 
 // ─── api functions ───────────────────────────────────────────────────────────
 
-export function getTestimonials(): Promise<Testimonial[]> {
-  return apiClient.get(API_URLS.testimonials.list).json()
+export async function getTestimonials(): Promise<Testimonial[]> {
+  const res = await fetch('/dummyData/testimonials.json')
+  return res.json() as Promise<Testimonial[]>
 }

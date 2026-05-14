@@ -1,6 +1,3 @@
-import { apiClient } from './apiClient'
-import { API_URLS } from './apiUrls'
-
 // ─── types ───────────────────────────────────────────────────────────────────
 
 export interface BlogAuthor {
@@ -39,12 +36,22 @@ export interface PaginatedBlogs {
 
 // ─── api functions ───────────────────────────────────────────────────────────
 
-export function getBlogs(params?: BlogListParams): Promise<PaginatedBlogs> {
-  return apiClient
-    .get(API_URLS.blogs.list, { searchParams: { ...params } })
-    .json()
+export async function getBlogs(params?: BlogListParams): Promise<PaginatedBlogs> {
+  const res = await fetch('/dummyData/blogs.json')
+  const all: Blog[] = await res.json()
+
+  const page = params?.page ?? 1
+  const limit = params?.limit ?? all.length
+  const start = (page - 1) * limit
+  const data = all.slice(start, start + limit)
+
+  return { data, total: all.length, page, limit, totalPages: Math.ceil(all.length / limit) }
 }
 
-export function getBlogBySlug(slug: string): Promise<Blog> {
-  return apiClient.get(API_URLS.blogs.bySlug(slug)).json()
+export async function getBlogBySlug(slug: string): Promise<Blog> {
+  const res = await fetch('/dummyData/blogs.json')
+  const all: Blog[] = await res.json()
+  const blog = all.find((b) => b.slug === slug)
+  if (!blog) throw new Error(`Blog not found: ${slug}`)
+  return blog
 }

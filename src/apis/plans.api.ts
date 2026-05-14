@@ -1,6 +1,3 @@
-import { apiClient } from './apiClient'
-import { API_URLS } from './apiUrls'
-
 // ─── types ───────────────────────────────────────────────────────────────────
 
 export interface PlanPrice {
@@ -28,6 +25,7 @@ export interface Plan {
 
 // ─── api functions ───────────────────────────────────────────────────────────
 
-export function getPlans(): Promise<Plan[]> {
-  return apiClient.get(API_URLS.plans.list).json()
+export async function getPlans(): Promise<Plan[]> {
+  const res = await fetch('/dummyData/plans.json')
+  return res.json() as Promise<Plan[]>
 }

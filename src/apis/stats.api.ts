@@ -1,6 +1,3 @@
-import { apiClient } from './apiClient'
-import { API_URLS } from './apiUrls'
-
 // ─── types ───────────────────────────────────────────────────────────────────
 
 export interface PlatformStats {
@@ -39,6 +36,7 @@ export interface Stats {
 
 // ─── api functions ───────────────────────────────────────────────────────────
 
-export function getStats(): Promise<Stats> {
-  return apiClient.get(API_URLS.stats.platform).json()
+export async function getStats(): Promise<Stats> {
+  const res = await fetch('/dummyData/stats.json')
+  return res.json() as Promise<Stats>
 }
